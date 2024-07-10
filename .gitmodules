@@ -1,0 +1,9 @@
+[submodule "test2"]
+	path = test2
+	url = https://github.com/DavidL0914/test2.git
+[submodule "expanse-101-refactor"]
+	path = expanse-101-refactor
+	url = https://github.com/sdsc-hpc-training-dev/expanse-101-refactor.git
+[submodule "notebooks-101-dev"]
+	path = notebooks-101-dev
+	url = https://github.com/sdsc-hpc-training-dev/notebooks-101-dev.git
