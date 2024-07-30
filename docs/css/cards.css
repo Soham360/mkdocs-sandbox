@@ -1,0 +1,54 @@
+/* cards.css */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+  }
+  
+  .card-body .tags {
+    margin-top: 1rem;
+  }
+  
+  .card-body .tag {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .no-toc .md-nav {
+    display: none;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+  .tag {
+      background-color: #f0f0f0;
+      border-radius: 5px; 
+      margin: 3px 0;
+      font-size: 15px; 
+      cursor: pointer;
+  }
+
+  .tag:hover {
+      background-color: #e0e0e0;
+  }

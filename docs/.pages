@@ -5,6 +5,7 @@ nav:
       - iSpLib
     - Software Architecture and Design:
       - Base_ICICLE_Tapis_Software.md
+      - Event_Engine.md
       - hello_icicle_auth_clients
       - Tapis_Pods_Service.md
       - CI_Components_Catalog.md
