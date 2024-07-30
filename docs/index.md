@@ -48,7 +48,7 @@ title: "ICICLE Training Catalog"
 
 <div class="card">
   <div class="card-header">
-    <h2><a href="https://tapis.readthedocs.io/en/latest/index.html">Base ICICLE Tapis Software</a></h2>
+    <h2><a href="https://tapis.readthedocs.io/en/latest/index.html" target="_blank">Base ICICLE Tapis Software</a></h2>
   </div>
   <div class="card-body">
     <p>Tapis is a hosted, web-based API framework for securely managing computational workloads across infrastructure and institutions so that experts can focus on their research instead of the technology.</p>
@@ -61,7 +61,7 @@ title: "ICICLE Training Catalog"
 
 <div class="card">
   <div class="card-header">
-    <h2><a href="https://crates.io/crates/event-engine">Event Engine</a></h2>
+    <h2><a href="https://crates.io/crates/event-engine" target="_blank">Event Engine</a></h2>
   </div>
   <div class="card-body">
     <p>The Event Engine is a framework for edge simulators and for writing event-based applications in Rust. The Event Engine utilizes a plugin architecture so that they can be written in multiple languages.</p>
@@ -87,7 +87,7 @@ title: "ICICLE Training Catalog"
 
 <div class="card">
   <div class="card-header">
-    <h2><a href="https://tapis.readthedocs.io/en/latest/technical/pods.html">Tapis Pods Service</a></h2>
+    <h2><a href="https://tapis.readthedocs.io/en/latest/technical/pods.html" target="_blank">Tapis Pods Service</a></h2>
   </div>
   <div class="card-body">
     <p>The Tapis Pods Service provides a web service and distributed platform providing Pods-as-a Service platform via Kubernetes. The primary use of this service is to provide quick to deploy long-lived services based on Docker images that are exposed via HTTP or TCP endpoints.</p>
@@ -100,7 +100,7 @@ title: "ICICLE Training Catalog"
 
 <div class="card">
   <div class="card-header">
-    <h2><a href="https://components.pods.icicle.tapis.io/data">CI Components Catalog</a></h2>
+    <h2><a href="https://components.pods.icicle.tapis.io/data" target="_blank">CI Components Catalog</a></h2>
   </div>
   <div class="card-body">
     <p>Hosted using our Tapis Pods Service, the CI Components Catalog showcases the most up-to-date released CI components available to the public.</p>
