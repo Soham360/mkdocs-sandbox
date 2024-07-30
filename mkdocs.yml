@@ -10,7 +10,6 @@ theme: 'readthedocs'
 plugins:
   - search
   - awesome-pages
-  - tags
 
 extra_javascript:
   - js/tooltips.js
