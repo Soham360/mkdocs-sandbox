@@ -31,3 +31,6 @@
 [submodule "PPODLinkML"]
 	path = PPODLinkML
 	url = https://github.com/ICICLE-ai/PPODLinkML.git
+[submodule "davidiscool"]
+	path = davidiscool
+	url = https://github.com/DavidL0914/davidiscool.git
