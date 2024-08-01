@@ -34,3 +34,6 @@
 [submodule "davidiscool"]
 	path = davidiscool
 	url = https://github.com/DavidL0914/davidiscool.git
+[submodule "yamltest"]
+	path = yamltest
+	url = https://github.com/DavidL0914/yamltest.git

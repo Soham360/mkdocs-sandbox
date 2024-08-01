@@ -21,4 +21,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install pillow cairosvg
+      - run: pip install pyyaml
+      - run: python generate_cards.py
       - run: mkdocs gh-deploy --force
