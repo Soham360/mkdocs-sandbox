@@ -19,7 +19,7 @@ Welcome to the ICICLE Training Catalog! Explore our resources and training oppor
   <div class="card-body">
     <p>Here is the description</p>
     <div class="tags">
-      <a href="/tag.html?tag=AI" class="tag" data-tag="AI">AI</a> <a href="/tag.html?tag=CI" class="tag" data-tag="CI">CI</a> <a href="/tag.html?tag=LLM" class="tag" data-tag="LLM">LLM</a> <a href="/tag.html?tag=Deep Learning" class="tag" data-tag="Deep Learning">Deep Learning</a> <a href="/tag.html?tag=Modules" class="tag" data-tag="Modules">Modules</a> <a href="/tag.html?tag=Access" class="tag" data-tag="Access">Access</a> <a href="/tag.html?tag=Software" class="tag" data-tag="Software">Software</a> <a href="/tag.html?tag=Python" class="tag" data-tag="Python">Python</a> <a href="/tag.html?tag=Supervised-Learning" class="tag" data-tag="Supervised-Learning">Supervised-Learning</a>
+      <a href="/mkdocs-testing/tag.html?tag=AI" class="tag" data-tag="AI">AI</a> <a href="/mkdocs-testing/tag.html?tag=CI" class="tag" data-tag="CI">CI</a> <a href="/mkdocs-testing/tag.html?tag=LLM" class="tag" data-tag="LLM">LLM</a> <a href="/mkdocs-testing/tag.html?tag=Deep Learning" class="tag" data-tag="Deep Learning">Deep Learning</a> <a href="/mkdocs-testing/tag.html?tag=Modules" class="tag" data-tag="Modules">Modules</a> <a href="/mkdocs-testing/tag.html?tag=Access" class="tag" data-tag="Access">Access</a> <a href="/mkdocs-testing/tag.html?tag=Software" class="tag" data-tag="Software">Software</a> <a href="/mkdocs-testing/tag.html?tag=Python" class="tag" data-tag="Python">Python</a> <a href="/mkdocs-testing/tag.html?tag=Supervised-Learning" class="tag" data-tag="Supervised-Learning">Supervised-Learning</a>
     </div>
   </div>
 </div>
