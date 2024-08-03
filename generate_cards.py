@@ -1,5 +1,6 @@
 import yaml
 import os
+import json
 
 # Define the paths to the submodules' YAML files
 submodule_yaml_paths = [
@@ -8,6 +9,7 @@ submodule_yaml_paths = [
 
 # Define the output markdown file
 output_md_path = 'docs/index.md'
+tag_data_json_path = 'docs/tag_data.json'
 
 # Initialize the markdown content
 cards_md = """
@@ -23,6 +25,9 @@ Welcome to the ICICLE Training Catalog! Explore our resources and training oppor
 
 """
 
+# Data structure to hold all items for tag filtering
+tag_data = []
+
 # Process each submodule's YAML file
 for submodule_yaml_path in submodule_yaml_paths:
     if os.path.exists(submodule_yaml_path):
@@ -35,7 +40,15 @@ for submodule_yaml_path in submodule_yaml_paths:
                 title = item.get('title', 'No Title')
                 description = item.get('description', 'No Description')
                 tags = item.get('tags', [])
-                tags_md = ' '.join([f'<a href="#" class="tag">{tag}</a>' for tag in tags])
+                tags_md = ' '.join([f'<a href="/tag.html?tag={tag}" class="tag" data-tag="{tag}">{tag}</a>' for tag in tags])
+                
+                # Add item to tag_data for JSON
+                tag_data.append({
+                    "title": title,
+                    "description": description,
+                    "tags": tags
+                })
+                
                 cards_md += f"""
 <div class="card">
   <div class="card-header">
@@ -50,6 +63,10 @@ for submodule_yaml_path in submodule_yaml_paths:
 </div>
 """
 
-# Write to the markdown file
+# Write the markdown content to index.md
 with open(output_md_path, 'w') as file:
     file.write(cards_md)
+
+# Write the tag data to a JSON file for use in tag.html
+with open(tag_data_json_path, 'w') as file:
+    json.dump(tag_data, file, indent=2)
