@@ -1,0 +1,239 @@
+components:
+  # 2023-04 Release
+  - id: TapisBase:1.3.0
+    name: Base ICICLE Tapis Software
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
+
+  - id: EventEngine:0.2.0
+    name: Event Engine
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: CameraTrapsEdgeSim:0.3.0
+    name: Camera Traps Edge Simulator
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: EventEngine:0.2.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: PodsService:1.3.0
+    name: Tapis Pods Service API
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+
+  - id: SFVADashboard:0.1
+    name: Smart Foodsheds VA Dashboard
+    primaryThrust: useInspired/SF
+    description: Visualizse food flows or something...
+    status: Alpha
+    targetIcicleRelease: 2023-04
+    publicAccess: true
+    componentVersion: 0.1
+    licenseUrl: Unknown
+
+  - id: ComponentCatalog:0.1.0
+    name: ICICLE CI Component Catalog
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: HARP:1.0.0
+    name: HPC Application Runtime Predictor (HARP)
+
+  - id: SoftwarePilot:1.2.5
+    name: Software Pilot
+
+  - id: HelloICICLEAuthClients:0.0.1
+    name: Hello ICICLE Auth Clients
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+
+  - id: PPODFSL:0.9.1
+    name: PPOD Schema - FSL Version
+
+  - id: iSpLib:1.0
+    name: Intelligent Sparse Library (iSpLib)
+
+  # 2023-06 Release
+  - id: CameraTrapsEdgeSim:0.3.1
+    name: Camera Traps Edge Simulator
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: EventEngine:0.2.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: PodsService:1.3.2
+    name: Tapis Pods Service API
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+
+  - id: KrogerStoreClosure:0.1
+    name: Kroger Grocery Store Closure Simulator Dashboard
+
+  - id: ICICLEFoodshedParser:0.1
+    name: ICICLEFoodshedParser
+
+  - id: SFVADashboard:0.2
+    name: Smart Foodsheds VA Dashboard
+
+  - id: DigitalAgHub:1.0
+    name: ICICLE Digital Agriculture Hub
+
+  - id: FarEdgeEdgeSimulator:1.0
+    name: Far-Edge Edge Simulator
+    hasDependentComponents:
+      - related_to: DigitalAgHub:1.0
+        relationship_type: DependsOn
+
+  - id: InFieldHelperForCropScouts:1.0
+    name: In-Field Helper for Crop Scouts
+    hasDependentComponents:
+      - related_to: DigitalAgHub:1.0
+        relationship_type: DependsOn
+
+  - id: ICICONSOLE:0.0.10
+    name: ICICONSOLE
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.3.2
+        relationship_type: DependsOn
+      - related_to: HelloICICLEAuthClients:0.0.1
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+
+  - id: TapisCL-ICICLE:0.1.4
+    name: TapisCL-ICICLE
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.3.2
+        relationship_type: DependsOn
+      - related_to: HelloICICLEAuthClients:0.0.1
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+
+  - id: PPODCA:23.06
+    name: California PPOD knowledge graph data.
+
+  - id: FederatedAuthService:1.3.4
+    name: Tapis Federated Authentication Service
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: Region2vec:1.0
+    name: Region2vec
+
+  - id: CameraTrapMultimodalKG:0.1.0
+    name: Species Classification using Multimodal Heterogeneous Context
+
+  # 23-10 Release
+  - id: HPDataset:1.0
+    name: Dataset of Static and Dynamic features for High Performance Computing Applications.
+
+  - id: iciflaskn:1.0
+    name: iciflaskn
+
+  - id: HARP:2.0.0
+    name: HPC Application Runtime Predictor (HARP)
+
+  - id: TapisCL-ICICLE:1.0.11
+    name: TapisCL-ICICLE
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.3.2
+        relationship_type: DependsOn
+      - related_to: HelloICICLEAuthClients:0.0.1
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+
+  - id: ICICONSOLE:0.8.0
+    name: ICICONSOLE
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.3.2
+        relationship_type: DependsOn
+      - related_to: HelloICICLEAuthClients:0.0.1
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+
+  - id: CameraTrapsEdgeSim:0.3.2
+    name: Camera Traps Edge Simulator
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+      - related_to: EventEngine:0.2.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: SFVADashboard:0.3
+    name: Smart Foodsheds VA Dashboard
+
+  # 24-01 Release
+  - id: PodsService:1.5.3
+    name: Tapis Pods Service API
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+
+  - id: FederatedAuthService:1.5.0
+    name: Tapis Federated Authentication Service
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: Iluvatar:1.0.0
+    name: Iluvatar Functions as a Service (FaaS) Control Plane
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: false
+
+  #
+
+  # 24-06 Release
+  - id: TapisUI:1.6.0
+    name: Tapis User Interface
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+
+  - id: PodsService:1.6.0
+    name: Tapis Pods Service API
+    hasDependentComponents:
+      - related_to: TapisBase:1.3.0
+        relationship_type: DependsOn
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+
+  - id: PPOD_Core:0.5.0
+    name: PPOD Core
+#
