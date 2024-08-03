@@ -40,7 +40,8 @@ for submodule_yaml_path in submodule_yaml_paths:
                 title = item.get('title', 'No Title')
                 description = item.get('description', 'No Description')
                 tags = item.get('tags', [])
-                tags_md = ' '.join([f'<a href="/tag.html?tag={tag}" class="tag" data-tag="{tag}">{tag}</a>' for tag in tags])
+                # tags_md = ' '.join([f'<a href="/tag.html?tag={tag}" class="tag" data-tag="{tag}">{tag}</a>' for tag in tags]) # Use this for local version
+                tags_md = ' '.join([f'<a href="/tag.html?tag={tag}" class="tag" data-tag="{tag}">{tag}</a>' for tag in tags]) # Use this for deployed version
                 
                 # Add item to tag_data for JSON
                 tag_data.append({
