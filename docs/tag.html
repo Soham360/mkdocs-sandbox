@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag Filter</title>
+</head>
+<body>
+  <h1>Training Materials for <span id="tag-name"></span></h1>
+  <table id="tag-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- The rows will be dynamically populated -->
+    </tbody>
+  </table>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const tagName = urlParams.get('tag');
+      document.getElementById('tag-name').textContent = tagName;
+
+      fetch('/docs/tag_data.json')
+        .then(response => response.json())
+        .then(data => {
+          const tableBody = document.querySelector('#tag-table tbody');
+          tableBody.innerHTML = ''; // Clear existing rows
+
+          data.forEach(item => {
+            if (item.tags.includes(tagName)) {
+              const row = document.createElement('tr');
+              row.innerHTML = `
+                <td>${item.title}</td>
+                <td>${item.description}</td>
+                <td>${item.tags.join(', ')}</td>
+              `;
+              tableBody.appendChild(row);
+            }
+          });
+        });
+    });
+  </script>
+</body>
+</html>
